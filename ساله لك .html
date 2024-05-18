@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript UI</h1>
+        <button onclick="showMessage()">Click me!</button>
+        <div class="result" id="message"></div>
+        <a href="https://youtu.be/ibhlDVTLocU?si=GnRM6rFs4k2L4wAD">Go to Example.com</a>
+    </div>
+
+    <script>
+        function showMessage() {
+            var messageElement = document.getElementById("message");
+            messageElement.textContent = "اتقي الله وني بيك ";
+        }
+    </script>
+</body>
+</html>
